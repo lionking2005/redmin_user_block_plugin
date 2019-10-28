@@ -3,7 +3,7 @@
 Description goes here
 
 * For install plugin
-	*bundle exec rake redmine:plugins:migrate RAILS_ENV=production NAME=Redmine_block_user
+	bundle exec rake redmine:plugins:migrate RAILS_ENV=production NAME=Redmine_block_user
 
 * Uninstall
-	*bundle exec rake redmine:plugins:migrate RAILS_ENV=production NAME=Redmine_block_user VERSION=0
+	bundle exec rake redmine:plugins:migrate RAILS_ENV=production NAME=Redmine_block_user VERSION=0
