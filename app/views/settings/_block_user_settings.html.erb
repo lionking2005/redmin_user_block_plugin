@@ -1,0 +1,13 @@
+<% defaults = Redmine::Plugin::registered_plugins[:Redmine_block_user].settings[:default] || {} %>
+<% settings = Setting.plugin_Redmine_block_user || {} %>
+<% @settings = settings.reverse_merge(defaults).with_indifferent_access %>
+
+<p>
+	<label for="settings_block_use_yn"><%= l(:block_use_yn) %></label>
+	<%= check_box_tag 'settings[block_use_yn]', true, @settings['block_use_yn'] == true %>
+</p>
+
+<p>
+	<label for="settings_attempts_times"><%= l(:login_attempts_times) %></label>
+	<%= text_field_tag('settings[attempt_times]', @settings[:attempt_times], size:30) %>
+</p>

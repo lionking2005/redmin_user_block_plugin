@@ -1,0 +1,4 @@
+# English strings go here for Rails i18n
+en:
+  block_use_yn: Availability
+  login_attempts_times: Login Attempts Times
